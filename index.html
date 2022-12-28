@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>うぼんご最強webサイト</title>
+    </head>
+    <body>
+        <section class="showcase ">
+                <header>
+                    <h1 class="logo">うぼんご</h1>
+                    <div class="toggle "></div>
+                </header>
+            
+            <video src="./images/pale.mp4" autoplay loop muted></video> 
+
+            <div class="overlay"></div>
+
+            <div class="text">
+                <h2>INSOMNIA</h2>
+                <h3>各種ボタンをクリックすると画面遷移する予定です</h3>
+                <p>
+                    #INSWIN
+                </p>
+                <a href="#">Dive Into</a>
+            </div>
+
+            <ul class="social">
+                <li>
+                    <a href="#"><img src="./images/instagram.png" alt=""/></a>
+                </li>
+                <li>
+                    <a href="#"><img src="./images/twitter (1).png" alt=""/></a>
+                </li>
+                <li>
+                    <a href="#"><img src="./images/facebook.png" alt=""/></a>
+                </li>
+            </ul>
+        </section>
+
+        <div class="menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Content</a></li>
+                <li><a href="">Destination</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+
+        <script>
+            const menuToggle = document.querySelector(".toggle");
+            const showcase = document.querySelector(".showcase");
+
+            menuToggle.addEventListener("click", function () {
+                menuToggle.classList.toggle("active");
+                showcase.classList.toggle("active");
+            });
+        </script>
+    </body>
+</html>
